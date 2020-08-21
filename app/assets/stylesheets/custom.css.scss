@@ -10,7 +10,6 @@
 
 html,
 body {
-    background-color: rgb(43,0,100);
     color: white;
     height: 100%;
 }
@@ -31,6 +30,7 @@ body {
 }
 
 #page-content {
+    background-color: rgb(43,0,100);
     flex: 1 0 auto;
 } 
 
