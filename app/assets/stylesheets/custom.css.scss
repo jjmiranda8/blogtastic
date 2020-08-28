@@ -14,7 +14,22 @@ body {
     height: 100%;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
+.card-body {
+    color: white;
+}  
+
+.card-header {
+    color: white;
+}
+
+.card-text {
+    color: white;
+}
 #logo {
 
     float: left;
@@ -31,7 +46,7 @@ body {
 }
 
 #page-content {
-    background-color: #301934; 
+    background-color: #606688; 
     flex: 1 0 auto;
 } 
 
@@ -39,7 +54,7 @@ body {
     flex-shrink: none;
 }
 .apple_pagination {
-    background: #301934;
+    background: #606688;
     text-align: center;
     padding: 1em;
     cursor: default;

@@ -11,7 +11,7 @@
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Profile  
+           Profile  
         </a>
                 
       <div class="dropdown-menu bg-dark"  aria-labelledby="navbarDropdownMenuLink">
@@ -44,7 +44,8 @@
     </ul>
   </div>
   <% if logged_in? %>
-  <%= link_to current_user.username, user_path(current_user), class: "nav-link" %>
+    <%= "(Admin)" if current_user.admin? %>
+    <%= link_to current_user.username, user_path(current_user), class: "nav-link" %>
   <% end %>
 
 </nav>
