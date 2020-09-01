@@ -38,7 +38,23 @@
           <%= link_to "New Article", new_article_path, class: "nav-link" %>
         <% end %>
       </div>
+
       </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories 
+        </a>
+                
+      <div class="dropdown-menu bg-dark"  aria-labelledby="navbarDropdownMenuLink">
+        <%= link_to "View categories", categories_path, class: "nav-link" %>
+        <% if logged_in? && current_user.admin? %>
+          <%= link_to "Create category", new_category_path, class: "nav-link" %>
+        <% end %>
+      </div>
+
+      </li>
+
 
          <%= link_to "Bloggers", users_path, class: "nav-link" %>
     </ul>
