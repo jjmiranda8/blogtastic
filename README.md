@@ -13,4 +13,4 @@ Things you may want to cover:
 
 * Styled with Bootstrap 
 
-[Blogtastic](blogtastical.herokuapp.com)
+blogtastical.herokuapp.com
